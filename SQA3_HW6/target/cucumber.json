@@ -1,0 +1,700 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T12:17:09.483Z",
+        "line": 2,
+        "name": "Successful Adding to Cart",
+        "description": "",
+        "id": "addtocart;successful-adding-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3491232000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open my browser",
+            "match": {
+              "location": "StepDef.AddToCart.iOpenMyBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5754144100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open saucedemo website",
+            "match": {
+              "location": "StepDef.AddToCart.openSaucedemoWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62256100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Located on saucedemo website",
+            "match": {
+              "location": "StepDef.AddToCart.locatedOnSaucedemoWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111349000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input the right username",
+            "match": {
+              "location": "StepDef.AddToCart.iInputTheRightUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 195262600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input the right password",
+            "match": {
+              "location": "StepDef.AddToCart.iInputTheRightPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3306384700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the homepage",
+            "match": {
+              "location": "StepDef.AddToCart.iGoToTheHomepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71746900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I add product to cart",
+            "match": {
+              "location": "StepDef.AddToCart.iAddProductToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 553549000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The product is added to Cart",
+            "match": {
+              "location": "StepDef.AddToCart.The_product_is_added_to_Cart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "AddToCart",
+    "description": "",
+    "id": "addtocart",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/AddToCart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T12:17:23.106Z",
+        "line": 2,
+        "name": "Fail to Login",
+        "description": "",
+        "id": "faillogin;fail-to-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2892382200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open the browser",
+            "match": {
+              "location": "StepDef.FailLogin.i_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4924399200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open the website saucedemo",
+            "match": {
+              "location": "StepDef.FailLogin.Open_the_website_saucedemo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43429400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Located on saucedemo site",
+            "match": {
+              "location": "StepDef.FailLogin.Located_on_saucedemo_site()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103213300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input wrong username",
+            "match": {
+              "location": "StepDef.FailLogin.I_input_wrong_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 140413200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input wrong password",
+            "match": {
+              "location": "StepDef.FailLogin.I_input_wrong_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50386500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I got error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDef.FailLogin.I_Got_Error_Message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "FailLogin",
+    "description": "",
+    "id": "faillogin",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/FailLogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T12:17:31.272Z",
+        "line": 2,
+        "name": "Fail to continue after filling empty shipping info",
+        "description": "",
+        "id": "fillnullshippinginfo;fail-to-continue-after-filling-empty-shipping-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3002152700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open edge browser",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iOpenEdgeBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5819411300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open saucedemo website on edge browser",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.openSaucedemoWebsiteOnEdgeBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49693900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Located on saucedemo first page",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.locatedOnSaucedemoFirstPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121656900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input my username",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iInputMyUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193722600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input my password",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iInputMyPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1466348500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am directed to saucedemo homepage",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iAmDirectedToSaucedemoHomepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68652700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I add a product to the cart",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iAddAProductToTheCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 637738900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The selected product is added to The Cart",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.The_selected_product_is_added_to_The_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88130000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click checkout button",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iClickCheckoutButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40198200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Located on the shipping form",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.locatedOnTheShippingForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69207700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I input empty first name",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iInputValidFirstName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78781600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input empty last name",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iInputValidLastName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79555400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I input empty ZIP",
+            "match": {
+              "location": "StepDef.FillNullShippingInfo.iInputValidZIP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116362300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click continue button and get an error message \"Error: First Name is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Error: First Name is required\"",
+                  "offset": 49
+                }
+              ],
+              "location": "StepDef.FillNullShippingInfo.iClickContinueButtonAndGetAnErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "FillNullShippingInfo",
+    "description": "",
+    "id": "fillnullshippinginfo",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/FillNullShippingInfo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T12:17:43.117Z",
+        "line": 2,
+        "name": "Successful Filling Shipping Info",
+        "description": "",
+        "id": "fillshippinginfo;successful-filling-shipping-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2936274700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open my edge browser",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iOpenMyEdgeBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5265674100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open saucedemo website on browser",
+            "match": {
+              "location": "StepDef.FillShippingInfo.openSaucedemoWebsiteOnBrowser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40273300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Located on saucedemo login page",
+            "match": {
+              "location": "StepDef.FillShippingInfo.locatedOnSaucedemoLoginPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109648600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input the given username",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iInputTheGivenUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194801200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input the given password",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iInputTheGivenPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800110400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to saucedemo homepage",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iGoToSaucedemoHomepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63764600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I add product to the cart",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iAddProductToTheCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 535142200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The product is added to The Cart",
+            "match": {
+              "location": "StepDef.FillShippingInfo.The_product_is_added_to_The_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79672300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click checkout",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iClickCheckout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36605400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Located on shipping form",
+            "match": {
+              "location": "StepDef.FillShippingInfo.locatedOnShippingForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92423600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I input valid first name",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iInputValidFirstName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88941000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I input valid last name",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iInputValidLastName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78967400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I input valid ZIP",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iInputValidZIP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82919700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click continue",
+            "match": {
+              "location": "StepDef.FillShippingInfo.iClickContinue()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "FillShippingInfo",
+    "description": "",
+    "id": "fillshippinginfo",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/FillShippingInfo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-22T12:17:54.538Z",
+        "line": 2,
+        "name": "Successful login",
+        "description": "",
+        "id": "login;successful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3001481200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I open browser",
+            "match": {
+              "location": "StepDef.Login.i_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3324139200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open website saucedemo",
+            "match": {
+              "location": "StepDef.Login.Open_website_saucedemo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37121900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Located on saucedemo",
+            "match": {
+              "location": "StepDef.Login.Located_on_saucedemo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109872100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I input valid username",
+            "match": {
+              "location": "StepDef.Login.I_input_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 226970100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input valid password",
+            "match": {
+              "location": "StepDef.Login.I_input_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999650700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to homepage",
+            "match": {
+              "location": "StepDef.Login.I_go_to_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/Login.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>SQA_HW6</td>
+                          <td>1</td>
+                        <td>22 Oct 2023, 19:18</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">StepDef.AddToCart.The_product_is_added_to_Cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="553549000">553ms</td>
+                <td class="duration" data-value="553549000">553ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddToCart.iAddProductToCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="71746900">071ms</td>
+                <td class="duration" data-value="71746900">071ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddToCart.iGoToTheHomepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="3306384700">3s 306ms</td>
+                <td class="duration" data-value="3306384700">3s 306ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddToCart.iInputTheRightPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="195262600">195ms</td>
+                <td class="duration" data-value="195262600">195ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddToCart.iInputTheRightUsername()</td>
+                <td>1</td>
+                <td class="duration" data-value="111349000">111ms</td>
+                <td class="duration" data-value="111349000">111ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddToCart.iOpenMyBrowser()</td>
+                <td>1</td>
+                <td class="duration" data-value="3491232000">3s 491ms</td>
+                <td class="duration" data-value="3491232000">3s 491ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddToCart.locatedOnSaucedemoWebsite()</td>
+                <td>1</td>
+                <td class="duration" data-value="62256100">062ms</td>
+                <td class="duration" data-value="62256100">062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.AddToCart.openSaucedemoWebsite()</td>
+                <td>1</td>
+                <td class="duration" data-value="5754144100">5s 754ms</td>
+                <td class="duration" data-value="5754144100">5s 754ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FailLogin.I_Got_Error_Message(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="50386500">050ms</td>
+                <td class="duration" data-value="50386500">050ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FailLogin.I_input_wrong_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="140413200">140ms</td>
+                <td class="duration" data-value="140413200">140ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FailLogin.I_input_wrong_username()</td>
+                <td>1</td>
+                <td class="duration" data-value="103213300">103ms</td>
+                <td class="duration" data-value="103213300">103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FailLogin.Located_on_saucedemo_site()</td>
+                <td>1</td>
+                <td class="duration" data-value="43429400">043ms</td>
+                <td class="duration" data-value="43429400">043ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FailLogin.Open_the_website_saucedemo()</td>
+                <td>1</td>
+                <td class="duration" data-value="4924399200">4s 924ms</td>
+                <td class="duration" data-value="4924399200">4s 924ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FailLogin.i_open_the_browser()</td>
+                <td>1</td>
+                <td class="duration" data-value="2892382200">2s 892ms</td>
+                <td class="duration" data-value="2892382200">2s 892ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.The_selected_product_is_added_to_The_Cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="637738900">637ms</td>
+                <td class="duration" data-value="637738900">637ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iAddAProductToTheCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="68652700">068ms</td>
+                <td class="duration" data-value="68652700">068ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iAmDirectedToSaucedemoHomepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="1466348500">1s 466ms</td>
+                <td class="duration" data-value="1466348500">1s 466ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iClickCheckoutButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="88130000">088ms</td>
+                <td class="duration" data-value="88130000">088ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iClickContinueButtonAndGetAnErrorMessage(java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="116362300">116ms</td>
+                <td class="duration" data-value="116362300">116ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iInputMyPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="193722600">193ms</td>
+                <td class="duration" data-value="193722600">193ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iInputMyUsername()</td>
+                <td>1</td>
+                <td class="duration" data-value="121656900">121ms</td>
+                <td class="duration" data-value="121656900">121ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iInputValidFirstName()</td>
+                <td>1</td>
+                <td class="duration" data-value="69207700">069ms</td>
+                <td class="duration" data-value="69207700">069ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iInputValidLastName()</td>
+                <td>1</td>
+                <td class="duration" data-value="78781600">078ms</td>
+                <td class="duration" data-value="78781600">078ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iInputValidZIP()</td>
+                <td>1</td>
+                <td class="duration" data-value="79555400">079ms</td>
+                <td class="duration" data-value="79555400">079ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.iOpenEdgeBrowser()</td>
+                <td>1</td>
+                <td class="duration" data-value="3002152700">3s 002ms</td>
+                <td class="duration" data-value="3002152700">3s 002ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.locatedOnSaucedemoFirstPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="49693900">049ms</td>
+                <td class="duration" data-value="49693900">049ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.locatedOnTheShippingForm()</td>
+                <td>1</td>
+                <td class="duration" data-value="40198200">040ms</td>
+                <td class="duration" data-value="40198200">040ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillNullShippingInfo.openSaucedemoWebsiteOnEdgeBrowser()</td>
+                <td>1</td>
+                <td class="duration" data-value="5819411300">5s 819ms</td>
+                <td class="duration" data-value="5819411300">5s 819ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.The_product_is_added_to_The_Cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="535142200">535ms</td>
+                <td class="duration" data-value="535142200">535ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iAddProductToTheCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="63764600">063ms</td>
+                <td class="duration" data-value="63764600">063ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iClickCheckout()</td>
+                <td>1</td>
+                <td class="duration" data-value="79672300">079ms</td>
+                <td class="duration" data-value="79672300">079ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iClickContinue()</td>
+                <td>1</td>
+                <td class="duration" data-value="82919700">082ms</td>
+                <td class="duration" data-value="82919700">082ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iGoToSaucedemoHomepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="1800110400">1s 800ms</td>
+                <td class="duration" data-value="1800110400">1s 800ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iInputTheGivenPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="194801200">194ms</td>
+                <td class="duration" data-value="194801200">194ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iInputTheGivenUsername()</td>
+                <td>1</td>
+                <td class="duration" data-value="109648600">109ms</td>
+                <td class="duration" data-value="109648600">109ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iInputValidFirstName()</td>
+                <td>1</td>
+                <td class="duration" data-value="92423600">092ms</td>
+                <td class="duration" data-value="92423600">092ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iInputValidLastName()</td>
+                <td>1</td>
+                <td class="duration" data-value="88941000">088ms</td>
+                <td class="duration" data-value="88941000">088ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iInputValidZIP()</td>
+                <td>1</td>
+                <td class="duration" data-value="78967400">078ms</td>
+                <td class="duration" data-value="78967400">078ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.iOpenMyEdgeBrowser()</td>
+                <td>1</td>
+                <td class="duration" data-value="2936274700">2s 936ms</td>
+                <td class="duration" data-value="2936274700">2s 936ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.locatedOnSaucedemoLoginPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="40273300">040ms</td>
+                <td class="duration" data-value="40273300">040ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.locatedOnShippingForm()</td>
+                <td>1</td>
+                <td class="duration" data-value="36605400">036ms</td>
+                <td class="duration" data-value="36605400">036ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.FillShippingInfo.openSaucedemoWebsiteOnBrowser()</td>
+                <td>1</td>
+                <td class="duration" data-value="5265674100">5s 265ms</td>
+                <td class="duration" data-value="5265674100">5s 265ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.I_go_to_homepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="999650700">999ms</td>
+                <td class="duration" data-value="999650700">999ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.I_input_valid_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="226970100">226ms</td>
+                <td class="duration" data-value="226970100">226ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.I_input_valid_username()</td>
+                <td>1</td>
+                <td class="duration" data-value="109872100">109ms</td>
+                <td class="duration" data-value="109872100">109ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.Located_on_saucedemo()</td>
+                <td>1</td>
+                <td class="duration" data-value="37121900">037ms</td>
+                <td class="duration" data-value="37121900">037ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.Open_website_saucedemo()</td>
+                <td>1</td>
+                <td class="duration" data-value="3324139200">3s 324ms</td>
+                <td class="duration" data-value="3324139200">3s 324ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StepDef.Login.i_open_browser()</td>
+                <td>1</td>
+                <td class="duration" data-value="3001481200">3s 001ms</td>
+                <td class="duration" data-value="3001481200">3s 001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>48</td>
+              <td>48</td>
+              <td class="duration">52s 636ms</td>
+              <td class="duration">1s 096ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
